@@ -16,46 +16,31 @@ export const BuildMomentum = () => {
       <Features.Main
         title={
           <>
-            Build momentum
+            Elevate Your
             <br />
-            with Cycles
+            Elevate Your Content Strategy
           </>
         }
-        image="/cycles.webp"
+        image="/ideagenerate.webp"
         imageSize="large"
-        text="Cycles focus your team on what work should happen next. A healthy routine to maintain velocity and make meaningful progress."
+        text="Search for content ideas and specify your preferred content length. Our AI helps you identify the most promising topics for your niche."
       />
       <Features.Grid
         features={[
           {
             icon: ParentSubIcon,
-            title: "Automatic tracking.",
-            text: "Any started issues are added to the current cycle.",
+            title: "Trending Topics",
+            text: "Stay ahead of the curve with insights into popular topics within your niche. Visualize trends with bar charts and growth indicators.",
           },
           {
             icon: AutomatedBacklogIcon,
-            title: "Scheduled.",
-            text: "Unfinished work rolls over to the next cycle automatically.",
+            title: "AI-Generated Content Ideas",
+            text: "Receive personalized content suggestions based on current trends and your niche, helping you create engaging and relevant posts.",
           },
           {
             icon: WorkflowsIcon,
-            title: "Fully configurable.",
-            text: "Define start date, end date, duration, and more.",
-          },
-          {
-            icon: CustomViewsIcon,
-            title: "Predict delays.",
-            text: "Get warnings for at-risk cycles.",
-          },
-          {
-            icon: DiscussionIcon,
-            title: "Scope creep.",
-            text: "Understand which issues are added mid-cycle.",
-          },
-          {
-            icon: IssuesIcon,
-            title: "Be prepared.",
-            text: "Schedule work in advance with upcoming cycles.",
+            title: "Content Performance Prediction",
+            text: "Utilize AI to forecast engagement and receive key insights to fine-tune your content strategy for maximum impact",
           },
         ]}
       />

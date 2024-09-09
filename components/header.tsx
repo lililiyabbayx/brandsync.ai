@@ -1,12 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
-import { Button } from "./button";
 import { Container } from "./container";
 import { HamburgerIcon } from "./icons/hamburger";
-import { Logo } from "./icons/logo";
 import classNames from "classnames";
+import BrandSyncLogo from "./logos/brandsynclogo.png";
 
 export const Header = () => {
   const [hamburgerMenuIsOpen, setHamburgerMenuIsOpen] = useState(false);
@@ -32,7 +32,7 @@ export const Header = () => {
     <header className="fixed top-0 left-0 z-10 w-full border-b border-transparent-white backdrop-blur-[12px]">
       <Container className="flex h-navigation-height">
         <Link className="flex items-center text-md" href="/">
-          <Logo className="mr-4 h-[1.8rem] w-[1.8rem]" /> Linear
+          <Image src={BrandSyncLogo} alt="BrandSync Logo" width={75} />
         </Link>
 
         <div
@@ -57,37 +57,25 @@ export const Header = () => {
               )}
             >
               <li>
-                <Link href="#">Features</Link>
+                <Link href="#">About</Link>
               </li>
               <li>
-                <Link href="#">Method</Link>
+                <Link href="#">Documentation</Link>
               </li>
-              <li className="md:hidden lg:block">
-                <Link href="#">Customers</Link>
-              </li>
-              <li className="md:hidden lg:block">
-                <Link href="#">Changelog</Link>
-              </li>
-              <li className="md:hidden lg:block">
-                <Link href="#">Integrations</Link>
+              <li>
+                <Link href="https://github.com/tylorrfranca/InfluencerMarketingPlatform">
+                  GitHub
+                </Link>
               </li>
               <li>
                 <Link href="#">Pricing</Link>
               </li>
               <li>
-                <Link href="#">Company</Link>
+                <Link href="#">FAQ</Link>
               </li>
             </ul>
           </nav>
         </div>
-
-        <div className="ml-auto flex h-full items-center">
-          <Link className="mr-6 text-sm" href="#">
-            Log in
-          </Link>
-          <Button href="#">Sign up</Button>
-        </div>
-
         <button
           className="ml-6 md:hidden"
           onClick={() => setHamburgerMenuIsOpen((open) => !open)}

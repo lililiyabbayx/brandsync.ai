@@ -16,62 +16,45 @@ export const EnjoyIssueTracking = () => {
       <Features.Main
         title={
           <>
-            Issue tracking
+            Unlock Powerful Partnerships
             <br />
-            you'll enjoy using
+            Connect who resonate with your brand’s voice
           </>
         }
-        image="/issues.webp"
-        text="Create tasks in seconds, discuss issues in context, and breeze through your work in views tailored to you and your team."
+        image="/exploreinfluencer.webp"
+        text="Our AI-driven system provides a curated list of potential partners, complete with detailed analytics and video previews. Initiate contact with personalized emails and engage with influencers who are ready to amplify your brand."
       />
       <Features.Grid
         features={[
           {
             icon: ParentSubIcon,
-            title: "Parent and sub-issues.",
-            text: "Break larger takss into smaller issues",
+            title: "AI-Powered Matching",
+            text: "Find the perfect match with smart algorithms that connect you with relevant partners based on niche, engagement, and preferences.",
           },
           {
             icon: AutomatedBacklogIcon,
-            title: "Automated backlog.",
-            text: "Linear will auto-close and auto-archive issues.",
+            title: "Customizable Dashboards",
+            text: "Access personalized dashboards for both creators and businesses, displaying key metrics and insights for informed decision-making.",
           },
           {
             icon: WorkflowsIcon,
-            title: "Custom workflows",
-            text: "Define unique issue states for each team.",
+            title: "Seamless Communication",
+            text: "Generate auto-populated, customizable emails to streamline outreach and collaboration.",
           },
           {
             icon: CustomViewsIcon,
-            title: "Filters and custom views.",
-            text: "See only what's relevant for you.",
+            title: "Match Percentage",
+            text: "View a match percentage for each potential collaboration, helping you prioritize the best opportunities.",
           },
           {
             icon: DiscussionIcon,
-            title: "Discussion.",
-            text: "Collaborate on issues without losing context.",
+            title: "Content Research Tools",
+            text: "Gain insights into trending content and keywords to refine your strategy and stay ahead in your niche.",
           },
           {
             icon: IssuesIcon,
-            title: "Issue templates.",
-            text: "Guide your team to write effective issues.",
-          },
-        ]}
-      />
-      <Features.Cards
-        features={[
-          {
-            image: "/card-board.webp",
-            imageClassName: "top-[55%] md:top-[40%] w-[200%]",
-            title: "List and board",
-            text: "Switch between list and board layout to view work from any angle.",
-          },
-          {
-            image: "/card-views.webp",
-            imageClassName:
-              "top-[45%] left-[12px] md:top-[34%] md:left-[24px] w-[110%]",
-            title: "Make it yours",
-            text: "Quickly apply filters and operators to refine your issue lists and create custom views.",
+            title: "Success Potential Analysis",
+            text: "Evaluate the likelihood of successful collaborations with our AI-generated success scores and predictions.",
           },
         ]}
       />

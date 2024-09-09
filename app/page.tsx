@@ -2,11 +2,11 @@ import classNames from "classnames";
 import { Container } from "../components/container";
 import { StarsIllustration } from "../components/icons/stars";
 import { BuildMomentum } from "../components/sections/build-momentum";
-import { Clients } from "../components/sections/clients";
+//import { Clients } from "../components/sections/clients";
 import { EnjoyIssueTracking } from "../components/sections/enjoy-issue-tracking";
 import { HomepageHero } from "../components/sections/homepage-hero";
-import { SetDirection } from "../components/sections/set-direction";
-import { UnlikeAnyTool } from "../components/sections/unlike-any-tool";
+//import { SetDirection } from "../components/sections/set-direction";
+//import { UnlikeAnyTool } from "../components/sections/unlike-any-tool";
 
 export default function Homepage() {
   return (
@@ -16,9 +16,9 @@ export default function Homepage() {
           <HomepageHero />
         </Container>
       </div>
-      <Container>
+      {/* <Container>
         <Clients />
-      </Container>
+      </Container> */}
       <div
         className={classNames(
           "mask-radial-faded pointer-events-none relative z-[-1] my-[-12.8rem] h-[60rem] overflow-hidden",
@@ -28,11 +28,9 @@ export default function Homepage() {
       >
         <StarsIllustration />
       </div>
-      <UnlikeAnyTool />
 
       <EnjoyIssueTracking />
       <BuildMomentum />
-      <SetDirection />
     </>
   );
 }
