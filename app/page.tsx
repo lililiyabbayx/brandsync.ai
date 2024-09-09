@@ -7,7 +7,7 @@ import { EnjoyIssueTracking } from "../components/sections/enjoy-issue-tracking"
 import { HomepageHero } from "../components/sections/homepage-hero";
 //import { SetDirection } from "../components/sections/set-direction";
 //import { UnlikeAnyTool } from "../components/sections/unlike-any-tool";
-
+//import GoogleAnalytics from "@bradgarropy/next-google-analytics/dist/types/components/GoogleAnalytics";
 export default function Homepage() {
   return (
     <>
@@ -31,6 +31,7 @@ export default function Homepage() {
 
       <EnjoyIssueTracking />
       <BuildMomentum />
+      {/* <GoogleAnalytics measurementId="G-3PC8W1F8RH" /> */}
     </>
   );
 }

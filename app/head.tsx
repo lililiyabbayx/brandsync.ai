@@ -1,6 +1,9 @@
+import GoogleAnalytics from "@bradgarropy/next-google-analytics";
+
 export default function Head() {
   return (
     <>
+      <GoogleAnalytics measurementId="G-3PC8W1F8RH" />
       <title>Rebuilding Linear.app</title>
       <meta
         name="description"
