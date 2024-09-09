@@ -4,6 +4,7 @@ import { Container } from "../components/container";
 import { Footer } from "../components/footer";
 import { Header } from "../components/header";
 import "../styles/globals.css";
+import Script from "next/script";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -13,6 +14,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           name="viewport"
           content="width=device-width, height=device-height, initial-scale=1"
         />
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-3PC8W1F8RH"
+        />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-3PC8W1F8RH');
+          `}
+        </Script>
       </head>
       <body>
         <div>
